@@ -3,8 +3,8 @@
 git checkout master
 git branch -D patched
 git checkout -b patched
-git merge centeredmaster -m "centered master patch"
 git merge autostart -m "autostart patch"
-git merge fullgaps -m "fullgaps"
-git merge config -m "custom config"
-
+git merge attachbelow -m "attachbelow"
+git merge vanitygaps -m "vanitygaps"
+git merge fakefullscreen -m "fakefullscreen"
+git merge -Xtheirs config -m "custom config"
