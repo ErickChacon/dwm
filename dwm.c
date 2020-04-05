@@ -268,6 +268,7 @@ static Display *dpy;
 static Drw *drw;
 static Monitor *mons, *selmon;
 static Window root, wmcheckwin;
+static int isFullscreenFake = 0;
 
 /* configuration, allows nested code to access above variables */
 #include "config.h"
