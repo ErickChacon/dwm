@@ -111,8 +111,8 @@ centeredmaster(Monitor *m)
 	my = m->wy + oh;
 	mh = m->wh - 2*oh - ih * ((!m->nmaster ? n : MIN(n, m->nmaster)) - 1);
 	mw = m->ww - 2*ov;
-	lh = m->wh - 2*oh - ih * (((n - m->nmaster) / 2) - 1);
-	rh = m->wh - 2*oh - ih * (((n - m->nmaster) / 2) - ((n - m->nmaster) % 2 ? 0 : 1));
+	lh = m->wh - 2*oh - ih * (((n - m->nmaster) / 2) - ((n - m->nmaster) % 2 ? 0 : 1));
+	rh = m->wh - 2*oh - ih * (((n - m->nmaster) / 2) - 1);
 
 	if (m->nmaster && n > m->nmaster) {
 		/* go mfact box in the center if more than nmaster clients */
@@ -120,12 +120,13 @@ centeredmaster(Monitor *m)
 			/* ||<-S->|<---M--->|<-S->|| */
 			mw = (m->ww - 2*ov - 2*iv) * m->mfact;
 			lw = (m->ww - mw - 2*ov - 2*iv) / 2;
+                        mx += lw + iv;
 		} else {
 			/* ||<---M--->|<-S->|| */
 			mw = (mw - iv) * m->mfact;
 			lw = m->ww - mw - iv - 2*ov;
+                        mx += lw + iv;
 		}
-                mx += lw + iv;
 		rw = lw;
 		lx = m->wx + ov;
 		ly = m->wy + oh;
