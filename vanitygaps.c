@@ -120,12 +120,12 @@ centeredmaster(Monitor *m)
 			/* ||<-S->|<---M--->|<-S->|| */
 			mw = (m->ww - 2*ov - 2*iv) * m->mfact;
 			lw = (m->ww - mw - 2*ov - 2*iv) / 2;
-			mx += lw + iv;
 		} else {
 			/* ||<---M--->|<-S->|| */
 			mw = (mw - iv) * m->mfact;
 			lw = m->ww - mw - iv - 2*ov;
 		}
+                mx += lw + iv;
 		rw = lw;
 		lx = m->wx + ov;
 		ly = m->wy + oh;
