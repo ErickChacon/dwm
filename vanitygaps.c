@@ -101,9 +101,9 @@ centeredmaster(Monitor *m)
 		if (!m->nmaster || n < m->nmaster)
 			mn += 1;
 		else if ((n - m->nmaster) % 2)
-			ln += 1; // total factor of left hand stacke area
-		else
 			rn += 1; // total factor of right hand stack area
+		else
+			ln += 1; // total factor of left hand stacke area
 	}
 
 	/* initialize areas */
@@ -141,11 +141,11 @@ centeredmaster(Monitor *m)
 		} else {
 			/* stack clients are stacked vertically */
 			if ((i - m->nmaster) % 2 ) {
-				resize(c, lx, ly, lw - (2*c->bw), lh / ln - (2*c->bw), 0);
-				ly += HEIGHT(c) + ih;
-			} else {
 				resize(c, rx, ry, rw - (2*c->bw), rh / rn - (2*c->bw), 0);
 				ry += HEIGHT(c) + ih;
+			} else {
+				resize(c, lx, ly, lw - (2*c->bw), lh / ln - (2*c->bw), 0);
+				ly += HEIGHT(c) + ih;
 			}
 		}
 	}
