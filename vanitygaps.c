@@ -100,7 +100,7 @@ centeredmaster(Monitor *m)
 	for (n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++) {
 		if (!m->nmaster || n < m->nmaster)
 			mn += 1;
-		else if ((n - m->nmaster + 2) % 4 && (n - m->nmaster + 1) % 4)
+		else if ((n - m->nmaster + 2) % 4 || (n - m->nmaster + 1) % 4)
 			ln += 1; // total factor of left hand stacke area
 		else
 			rn += 1; // total factor of right hand stack area
@@ -140,7 +140,7 @@ centeredmaster(Monitor *m)
 			my += HEIGHT(c) + ih;
 		} else {
 			/* stack clients are stacked vertically */
-			if ((i - m->nmaster + 2) % 4 && (i - m->nmaster + 1) % 4) {
+			if ((i - m->nmaster + 2) % 4 || (i - m->nmaster + 1) % 4) {
 				resize(c, lx, ly, lw - (2*c->bw), lh / ln - (2*c->bw), 0);
 				ly += HEIGHT(c) + ih;
 			} else {
