@@ -140,7 +140,7 @@ centeredmaster(Monitor *m)
 			my += HEIGHT(c) + ih;
 		} else {
 			/* stack clients are stacked vertically */
-			if ((n - m->nmaster + 2) % 4 && (n - m->nmaster + 1) % 4) {
+			if ((i - m->nmaster + 2) % 4 && (i - m->nmaster + 1) % 4) {
 				resize(c, lx, ly, lw - (2*c->bw), lh / ln - (2*c->bw), 0);
 				ly += HEIGHT(c) + ih;
 			} else {
