@@ -114,6 +114,8 @@ static Key keys[] = {
         { 0,                XF86XK_AudioMute,	   spawn,          SHCMD("pamixer -t") },
 	{ 0,         XF86XK_AudioRaiseVolume,	   spawn,          SHCMD("pamixer -i 3") },
 	{ 0,         XF86XK_AudioLowerVolume,      spawn,          SHCMD("pamixer -d 3") },
+	{ 0,          XF86XK_MonBrightnessUp,      spawn,          SHCMD("backlight_control -10") },
+	{ 0,        XF86XK_MonBrightnessDown,      spawn,          SHCMD("backlight_control +10") },
 };
 
 /* button definitions */
