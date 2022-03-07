@@ -13,7 +13,7 @@ static const char dmenufont[]       = "DroidSansMono Nerd Font:size=11";
 static const char col_gray1[]       = "#3c3836"; /* #222222 */
 static const char col_gray2[]       = "#bdae93"; /* #8ec07c #fabd2f #444444 */
 static const char col_gray3[]       = "#928374"; /* #bbbbbb */
-static const char col_gray4[]       = "#a89984"; /* #3c3836 #eeeeee */
+static const char col_gray4[]       = "#d5c4a1"; /* #a89984 #3c3836 #eeeeee */
 static const char col_cyan[]        = "#504945"; /* #a89984 #8ec07c #005577 */
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
