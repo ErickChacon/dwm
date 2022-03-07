@@ -11,16 +11,15 @@ static const char *fonts[]          = {
 };
 static const char dmenufont[]       = "DroidSansMono Nerd Font:size=11";
 static const char col_gray1[]       = "#3c3836"; /* #222222 */
-static const char col_gray2[]       = "#8ec07c"; /* #444444 */
+static const char col_gray2[]       = "#fb4934"; /* #444444 */
 static const char col_gray3[]       = "#a89984"; /* #bbbbbb */
 static const char col_gray4[]       = "#a89984"; /* #3c3836 #eeeeee */
-static const char col_title[]       = "#d3869b"; /* #83a598 */
 static const char col_cyan[]        = "#504945"; /* #a89984 #8ec07c #005577 */
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray1 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_title },
-	[SchemeTitle]  = { col_title, col_gray1,  col_cyan  },
+	[SchemeNorm]  = { col_gray3, col_gray1, col_gray1 },
+	[SchemeSel]   = { col_gray4, col_cyan,  col_gray2 },
+	[SchemeTitle] = { col_gray2, col_gray1, col_gray1 },
 };
 
 /* tagging */
