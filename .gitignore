@@ -1,3 +1,5 @@
 *.o
 dwm
 config.h
+patches.sh
+patches-origin.sh
