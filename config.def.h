@@ -11,10 +11,10 @@ static       int smartgaps          = 0;        /* 1 means no outer gap when the
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = {
-    "DroidSansMono Nerd Font:size=11",
+    "DroidSansM Nerd Font:size=11",
     "monospace:size=10",
 };
-static const char dmenufont[]       = "DroidSansMono Nerd Font:size=11";
+static const char dmenufont[]       = "DroidSansM Nerd Font:size=11";
 static const char col_gray1[]       = "#3c3836"; /* #222222 */
 static const char col_gray2[]       = "#d3869b"; /* #bdae93 #8ec07c #fabd2f #444444 */
 static const char col_gray3[]       = "#928374"; /* #bbbbbb */
